@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 
@@ -15,98 +17,67 @@ class _ContainerTextState extends State<ContainerText> {
         body: Align(
       alignment: Alignment.center,
       child: Container(
-          height: 250,
-          width: 250,
+          height: 400,
+          width: 300,
           decoration: BoxDecoration(
-              color: Colors.blueAccent,
+              color: Colors.lightGreenAccent,
               borderRadius: BorderRadius.circular(25)),
-          child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-            Text(
-              "Name : ABID",
-              style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w700),
-            ),
-            SizedBox(
-              height: 7,
-            ),
-            Text(
-              "Address: KHULNA",
-              style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w700),
-            ),
-            SizedBox(
-              height: 7,
-            ),
-            Text(
-              "Place : Khulna",
-              style: TextStyle(
-                  color: Colors.pinkAccent,
-                  fontSize: 16,
-                  fontWeight: FontWeight.w700),
-            ),
-            SizedBox(
-              height: 7,
-            ),
-            Text(
-              "Lorem ipsum dolor sit ametr",
-              style: TextStyle(
-                  color: Colors.pinkAccent,
-                  fontSize: 16,
-                  fontWeight: FontWeight.w700),
-            ),
-            SizedBox(
-              height: 7,
-            ),
-            Text(
-              "Until recently, the prevailing view ",
-              style: TextStyle(
-                  color: Colors.pinkAccent,
-                  fontSize: 16,
-                  fontWeight: FontWeight.w700),
-            ),
-            SizedBox(
-              height: 7,
-            ),
-            Text(
-              "On the Extremes of Good and Evil",
-              style: TextStyle(
-                  color: Colors.pinkAccent,
-                  fontSize: 16,
-                  fontWeight: FontWeight.w700),
-            ),
-            SizedBox(
-              height: 7,
-            ),
-            Container(
-              height: 50,
-              width: 300,
-              decoration: BoxDecoration(
-                color: Colors.yellowAccent,
-                borderRadius: BorderRadius.circular(25),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                "My name is ABID",
+                style: TextStyle(
+                    color: Colors.redAccent,
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold),
               ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text("Creation"),
-                  SizedBox(
-                    width: 7,
-                  ),
-                  Text("Timelines"),
-                  SizedBox(
-                    width: 7,
-                  ),
-                  Text("Lorem ipsum"),
-                  SizedBox(
-                    width: 7,
-                  ),
-                ],
+              SizedBox(
+                height: 10,
               ),
-            )
-          ])),
+              Text(
+                "Khulna is my Home town",
+                style: TextStyle(color: Colors.redAccent, fontSize: 16),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Text("BSMRSTU is my University"),
+              SizedBox(
+                height: 10,
+              ),
+              Text(
+                "My name is ABID",
+                style: TextStyle(
+                  color: Colors.redAccent,
+                  fontSize: 24,
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Text(
+                "Khulna is my Home town",
+                style: TextStyle(
+                  color: Colors.redAccent,
+                  fontSize: 24,
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Text(
+                "BSMRSTU is my University",
+                style: TextStyle(
+                  color: Colors.redAccent,
+                  fontSize: 24,
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+            ],
+          )),
     ));
   }
 }
